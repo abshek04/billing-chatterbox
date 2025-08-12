@@ -104,11 +104,11 @@ export const ChatInterface = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-background">
+    <div className="flex flex-col h-screen bg-[#D8BFD8]">
       {/* Header */}
-      <header className="bg-chat-header-bg border-b border-border p-4 shadow-sm">
-        <div className="flex items-center justify-between">
-          <h1 className="text-xl font-semibold text-foreground">AI Billing Assistant</h1>
+      <header className="bg-chat-header-bg border-b border-border p-4 shadow-sm bg-[#BA55D3]">
+        <div className="flex items-center justify-between ">
+          <h1 className="text-xl font-semibold text-foreground ">AI Billing Assistant</h1>
           <ThemeToggle />
         </div>
       </header>
@@ -121,14 +121,14 @@ export const ChatInterface = () => {
             className={`flex ${message.isUser ? "justify-end" : "justify-start"}`}
           >
             <div
-              className={`max-w-xs sm:max-w-md lg:max-w-lg px-4 py-2 rounded-lg shadow-sm ${
+              className={`max-w-xs sm:max-w-md lg:max-w-lg px-4 py-2 rounded-lg shadow-sm bg-[#E6E6FA] ${
                 message.isUser
                   ? "bg-chat-user-bg text-chat-user-text rounded-br-none"
                   : "bg-chat-ai-bg text-chat-ai-text rounded-bl-none"
               }`}
             >
-              <p className="text-sm leading-relaxed">{message.text}</p>
-              <time className={`text-xs mt-1 block opacity-70`}>
+              <p className="text-sm leading-relaxed bg-[#E6E6FA] text-black">{message.text}</p>
+              <time className={`text-xs mt-1 block opacity-90 text-black`}>
                 {message.timestamp.toLocaleTimeString([], {
                   hour: "2-digit",
                   minute: "2-digit",
@@ -152,7 +152,7 @@ export const ChatInterface = () => {
       </div>
 
       {/* Input Area */}
-      <div className="bg-chat-input-bg border-t border-border p-4">
+      <div className="bg-chat-input-bg border-t border-border p-4 bg-[#483D8B]">
         <div className="flex items-center space-x-2 max-w-4xl mx-auto">
           <Input
             value={inputValue}
@@ -160,7 +160,7 @@ export const ChatInterface = () => {
             onKeyPress={handleKeyPress}
             placeholder="Type your message..."
             disabled={isLoading}
-            className="flex-1 border-border focus:ring-primary"
+            className="flex-1 border-border focus:ring-primary bg-white text-black"
           />
           <Button
             onClick={sendMessage}

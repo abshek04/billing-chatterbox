@@ -20,13 +20,13 @@ All colors MUST be HSL.
     --primary: 59 130 246;
     --primary-foreground: 248 250 252;
 
-    --secondary: 241 245 249;
+    --secondary: 245 245 245;
     --secondary-foreground: 51 65 85;
 
     --muted: 248 250 252;
     --muted-foreground: 100 116 139;
 
-    --accent: 239 246 255;
+    --accent: 245 245 245;
     --accent-foreground: 30 64 175;
 
     --destructive: 239 68 68;
