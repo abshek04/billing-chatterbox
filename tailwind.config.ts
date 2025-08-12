@@ -61,6 +61,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				chat: {
+					user: {
+						bg: 'hsl(var(--chat-user-bg))',
+						text: 'hsl(var(--chat-user-text))'
+					},
+					ai: {
+						bg: 'hsl(var(--chat-ai-bg))',
+						text: 'hsl(var(--chat-ai-text))'
+					},
+					header: {
+						bg: 'hsl(var(--chat-header-bg))'
+					},
+					input: {
+						bg: 'hsl(var(--chat-input-bg))'
+					}
 				}
 			},
 			borderRadius: {
