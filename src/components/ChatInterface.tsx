@@ -3,6 +3,7 @@ import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface Message {
   id: string;
@@ -106,7 +107,10 @@ export const ChatInterface = () => {
     <div className="flex flex-col h-screen bg-background">
       {/* Header */}
       <header className="bg-chat-header-bg border-b border-border p-4 shadow-sm">
-        <h1 className="text-xl font-semibold text-foreground">AI Billing Assistant</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-xl font-semibold text-foreground">AI Billing Assistant</h1>
+          <ThemeToggle />
+        </div>
       </header>
 
       {/* Chat Messages */}
